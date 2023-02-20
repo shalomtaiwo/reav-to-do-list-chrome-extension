@@ -1,25 +1,29 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "short_name": "Reav Todo",
+  "name": "Reav Todo",
+  "icons": {
+    "16": "favicon.ico",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  },
+  "permissions": [
+    "identity"
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "oauth2": {
+    "client_id": "466638239502-ahtdh9j7du7hkpb3kempdersjdrtgdb9.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu/ZUUsih2oe2CNVlfkCrz4WcEYrynyjNFaI4S0t5WjDQQj5ObSCg/fPp16MioRtLF5KFmC0Gr184MdhTKyDMNaks5WVzWfrcP0+mKHVblrdXLDjC0nMRcBvKTmRZCaRq8LBHzXtIP4YSta96w6wfZ05qGL3hWd4DzWk7ikwpfllkkhalU023vgOXwIXSuO4qtRnhqnwyyO0ui3FyuVE2yZVIflWz5ZeNHnVNR7u5ZkSQcD33DGFBArCE9sANL7M87+6PUGbfi6AnGL9ovQU12D5SVSFOKgTLsEUuHrIJcigr8/J310D/HjJ3qnbLdQ//d9Px9s7cumefv/lJjUtFYQIDAQAB",
+  "manifest_version": 3,
+  "version": "0.0.1",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Reav Todo"
+  },
+  "content_security_policy": {
+    "extensons": "frame-src 'self' https://fonts.gstatic.com https://apis.google.com  https://www.googleapis.com https://securetoken.googleapis.com https://accounts.google.com https://reavtodo.firebaseapp.com; object-src 'self'"
+  }
 }
